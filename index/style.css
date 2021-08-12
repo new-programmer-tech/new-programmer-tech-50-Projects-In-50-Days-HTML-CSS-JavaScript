@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -45,11 +45,19 @@ section {
 section ul li a {
   text-decoration: none;
   background: #fff;
+  font-size:25px;
+  font-family: 'Roboto', sans-serif;
+  padding:8px;
+ 
 }
 section ul li {
   list-style: none;
+  margin:10px;
+
 }
 
 section ul {
   display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
 }

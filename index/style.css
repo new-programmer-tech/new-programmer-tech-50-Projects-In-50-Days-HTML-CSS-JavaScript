@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgb(77, 129, 197);
+  height: 15vh;
+}
+
+header nav .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Style Script", cursive;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav .logo-icon {
+  width: 115px;
+  clip-path: circle();
+}
+
+header nav .logo-img {
+  padding: 7px;
+  /* border: 3px solid; */
+}
+
+/* SECTION */
+
+section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../images/section-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+section ul li a {
+  text-decoration: none;
+  background: #fff;
+}
+section ul li {
+  list-style: none;
+}
+
+section ul {
+  display: flex;
+}

@@ -43,17 +43,57 @@ section {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-color: rgb(231, 216, 231);
+  background-color: rgb(245, 243, 245);
 }
 
 .container {
   text-align: center;
 }
 
-section .progress-container{
+section .progress-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   max-width: 100%;
-  width:350px;
+  width: 350px;
+  position: relative;
+}
+
+section .progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+section .progress-container::before {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  
+
+}
+
+section .container .circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #e0e0e0;
+  z-index: 1;
+ 
 }
